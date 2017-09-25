@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Bartın ve İlçeleri" />
+
+
+
+        <item
+            android:id="@+id/nav_camera2"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Göller" />
+
+
+
+        <item
+            android:id="@+id/nav_camera3"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Antik Kentler" />
+
+
+
+        <item
+            android:id="@+id/nav_camera4"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Cami ve Konaklar" />
+
+
+
+        <item
+            android:id="@+id/nav_camera5"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Halk Kültürleri" />
+
+
+
+        <item
+            android:id="@+id/nav_camera6"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Yiyecek ve İçecekler" />
+
+
+
+
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Üniversite" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Diğer Yapıar" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Tools" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>
