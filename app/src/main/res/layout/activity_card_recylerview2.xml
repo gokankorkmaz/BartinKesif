@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#46E6FF"
+    tools:context="kodluyoruz.com.bartinkesif.CardRecyclerViewActivity2">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/bartin" />
+
+
+    <!--android:layout_below="@+id/imageView"-->
+
+    <TextView
+        android:id="@+id/yourTextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:gravity="left"
+        android:maxLines="50"
+        android:scrollbars="vertical"
+        android:text="\nPARTHENİA'dan Bartın’a dönüşen adın kaynağı PARTHENİOS dur. Bartın Irmağının antik çağdaki adı olan Parthenios; Yunan mitolojisinde, Tanrıların Babası OKENAUS’un çocukları olan yüzlerce tanrıdan birisi ve Sular Tanrısı’dır. Sular ilahı veya Muhteşem akan su anlamlarına gelir.\n\n
+
+Antik çağda, Parthenios adı verilen Bartın Irmağının kenarında kurulan Bartın Kentinin PARTHENİA adıyla anıldığı ve zamanla Bartın’a dönüştüğü yazılı kaynaklardan anlaşılmaktadır.\n\n
+
+Ünlü ozan HOMEROS, İLYADA destanında; Truva kentini korumak için Anadolu’dan gelen cengaverlere Parthenios Irmağı’nın suladığı ülkeden de yiğitlerin katıldığını anlatır. Amasyalı Strabon da bir eserinde yine Parthenios’tan söz eder.\n\n
+
+Bartın kentini, İ.Ö.14. yy’da Gaskalar sahiplenmiştir. Sonra; Hititler, Frigler, İonlar, Kimmerler, Lidyalılar, Persler, Helenler, Pontuslular, Roma ve Bizanslılar, Selçuklular ve Osmanlılar yurt edinmişler.\n\n
+
+Tarihi Paphlagonia bölgesindeki antik kentlerden; Sesamos (Amasra), Kromna (Kurucaşile) ve Erythinoi (Çakraz) Bartın sınırları içindedir.\n\n
+
+Antik değerlerin en fazla görüldüğü yer Amasra ilçesidir. Dünyada tek olan Kuşkayası Yol Anıtı, kale ve üzerindeki armalar, Kilise ve Chapel, Bedesten, İnziva mağarası antik kentin görünen yüzleri sayılır. Tiyatro (5000 kişilik), Forum, Şeref yolu, akropol ve nekropol gibi bölümler toprak altındadır.\n\n
+
+OSMANLI DÖNEMİNDE BARTIN\n\n
+1402 yılında yapılan Ankara savaşı sonunda bir ara İsfendiyaroğlu Beyliği’nin eline geçen kent 1461 yılında tekrar Osmanlı Devleti egemenliğine girmiştir.1460 yılına gelindiğinde, Bartın ve Çevresi; Osmanlı İmparatorluğu sınırları içinde, Amasra ise Ceneviz Kolonisi idi.Anadolu’da Türk birliğini sağlamak Cenevizlilerin elinde bulunan Karadeniz ticaretini ve denizyolunu ülkesine kazandırmak amacıyla Kuzey Anadolu Seferine hazırlanan Fatih Sultan Mehmet Han, ilk hedef olarak Amasra, Kastamonu ve Sinop’ seçti.1460 yılında, Fatih Sultan Mehmet Üsküdar’dan avlanmak bahanesiyle yola çıkarken,Mehmet Paşa Komutasındaki Osmanlı Donanması da denizden hareket etti.Fatih Bolu’ya geldiğinde Kastamonu ve Sinop yörelerine hakim olan ve Candaroğulları Beyliği’nin devamı sayılanİsfendiyaroğulları’nın Beyi İsmail Bey, padişaha kıymetli eşyalar göndererek bağlılığını bildirdi.Yoluna devam eden Fatih Ekim ayında Bartın’a gelip ordugahını bugünkü Orduyeri’ne kurdu.Donanmayla haberleşme sağlayan haberciler, Donanmanın Amasra açıklarında göründüğünü bildirdiklerinde , Amasra üzerine yürüyen Fatih, Ceneviz Senyoru’ndan kan dökülmemeden Amasra’yı teslim aldı.\n\n
+
+Bartın, Osmanlı döneminin 1460-1692 yılları arasında Anadolu Beylerbeyliği’ne bağlı Bolu Sancağı sınırları içinde yer aldı.Bolu Sancağının kaldırılmasıyla 1692-1811 yılları arasında Voyvodalıkla yönetilen Bartın, 1811 yılında da Kastamonu Vilayetine bağlı olarak yeniden kurulan Bolu Sancağına bağlandı.Bu dönemde ticari potansiyeliyle bölgenin Pazar yeri olan ve Oniki Divan adını alan Bartın, 1867 yılında ilçe oldu. 1876 yılında da Belediye Teşkilatı kuruldu.\n\n
+CUMHURİYET DÖNEMİNDE BARTIN\n\n
+1920 yılında Zonguldak Mutasarrıflığına bağlanan Bartın’ın 1924 yılında Zonguldak’ın il olmasıyla birlikte bu ilin ilçesi haline gelmiştir.07 Eylül 1991 tarihinde de 28.08.1991 tarih ve 3760 sayılı yasayla il statüsüne kavuşmuştur.\n\n
+
+Bartın iline bağlı ilçelerden Osmanlı döneminde ilçe iken Cumhuriyetle birlikte bucak statüsüne düşürülen Amasra; 1987 yılında yeniden, Ulus;1944 yılında, Kurucaşile; 1957 yılında ilçe olmuştur.\n\n
+
+Bartın’ın halen Merkez, Amasra, Ulus ve Kurucaşile olmak üzere 4 ilçesi vardır.
+
+"
+
+
+
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+</RelativeLayout>

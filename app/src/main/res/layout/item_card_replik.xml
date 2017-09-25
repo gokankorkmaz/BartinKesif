@@ -9,11 +9,10 @@
     app:cardCornerRadius="16dp"
     app:cardElevation="8dp"
     app:cardPreventCornerOverlap="false"
-
     app:cardUseCompatPadding="true">
 
     <RelativeLayout
-        android:layout_width="match_parent"
+         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
@@ -38,6 +37,8 @@
             android:layout_marginTop="10dp"
             android:padding="5dp"
             android:text="Devamı İçin Tıklayınız..." />
+
+
 
 
     </RelativeLayout>

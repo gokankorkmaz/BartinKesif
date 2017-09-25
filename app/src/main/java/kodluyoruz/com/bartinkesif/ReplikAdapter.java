@@ -1,6 +1,7 @@
 package kodluyoruz.com.bartinkesif;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -28,31 +29,40 @@ import static kodluyoruz.com.bartinkesif.R.id.replik;
  * ViewHolder’ı retur itemViewHolder; diyerek döndürüyoruz.
  */
 public class ReplikAdapter extends RecyclerView.Adapter<ViewHolder> {
-    //ArrayList<Replik>replikListesi;
-    Context context;
+
+     Context context;
     int itemLayout;
 
-    public ReplikAdapter( Context context, int itemLayout) {
-        //this.replikListesi = replikListesi;
-        this.context = context;
+    public ReplikAdapter(Context context, int itemLayout) {
+         this.context = context;
         this.itemLayout = itemLayout;
     }
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View v=LayoutInflater.from(context).inflate(itemLayout,parent,false);
+        View v = LayoutInflater.from(context).inflate(R.layout.item_card_replik, parent, false);
 
         return new ViewHolder(v);
     }
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
-       // Replik replik=replikListesi.get(position);
-        holder.replik.setText("Devamı İçin Tıklayınız...");
-        //Glide.with(context).load(replik.getFoto()).into(holder.foto);
+         holder.replik.setText("Devamı İçin Tıklayınız...");
+         holder.replik.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(), CardRecyclerViewActivity2.class);
+               view.getContext().startActivity(intent);
+            }
+        });
+
 
 
     }
+
+
+    //TODO Bu kütüphaneyi navigatordaki resim için indirmistim kaldırınca hata verecek
+    //    compile 'de.hdodenhof:circleimageview:2.1.0'
 
 
     //TODO BURAYI GUNCELLEYECEKSİN
