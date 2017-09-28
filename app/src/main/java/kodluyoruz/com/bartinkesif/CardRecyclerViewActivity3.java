@@ -28,7 +28,7 @@ public class CardRecyclerViewActivity3 extends MainActivity {
         yourTextview.setMovementMethod(new ScrollingMovementMethod());
 
 
-
+// TODO Imageview sabit olmayaak oda yazıyla beraber alta inecek
 
 
 

@@ -39,8 +39,6 @@
             android:text="Devamı İçin Tıklayınız..." />
 
 
-
-
     </RelativeLayout>
 </android.support.v7.widget.CardView>
 

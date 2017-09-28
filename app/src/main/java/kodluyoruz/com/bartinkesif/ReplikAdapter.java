@@ -29,12 +29,14 @@ import static kodluyoruz.com.bartinkesif.R.id.replik;
  * ViewHolder’ı retur itemViewHolder; diyerek döndürüyoruz.
  */
 public class ReplikAdapter extends RecyclerView.Adapter<ViewHolder> {
+    ArrayList<Replik> replikListesi;
 
-     Context context;
+    Context context;
     int itemLayout;
 
-    public ReplikAdapter(Context context, int itemLayout) {
-         this.context = context;
+    public ReplikAdapter(ArrayList<Replik> replikListesi, Context context, int itemLayout) {
+        this.replikListesi = replikListesi;
+        this.context = context;
         this.itemLayout = itemLayout;
     }
 
@@ -47,15 +49,18 @@ public class ReplikAdapter extends RecyclerView.Adapter<ViewHolder> {
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
-         holder.replik.setText("Devamı İçin Tıklayınız...");
-         holder.replik.setOnClickListener(new View.OnClickListener() {
+        Replik replik = replikListesi.get(position);
+
+        holder.replik.setText(replik.getReplik());
+        holder.replik.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(view.getContext(), CardRecyclerViewActivity2.class);
-               view.getContext().startActivity(intent);
+                //TODO Buranın normalde bu sekilde calisması lazım cardview icinde resim ve yazı oldugu icin alta gerek yok KONTROL
+
+//                Intent intent = new Intent(view.getContext(), CardRecyclerViewActivity2.class);
+//                view.getContext().startActivity(intent);
             }
         });
-
 
 
     }
@@ -65,9 +70,8 @@ public class ReplikAdapter extends RecyclerView.Adapter<ViewHolder> {
     //    compile 'de.hdodenhof:circleimageview:2.1.0'
 
 
-    //TODO BURAYI GUNCELLEYECEKSİN
     @Override
     public int getItemCount() {
-        return 1;
+        return  replikListesi.size();
     }
 }

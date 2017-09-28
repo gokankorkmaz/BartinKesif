@@ -23,25 +23,11 @@ public class CardRecyclerViewActivity2 extends MainActivity {
         ActionBar actionBar=getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setTitle("Bartın ve Tarihi");
-
         actionBar.show();
-
-
-
 
         TextView yourTextview = (TextView)findViewById(R.id. yourTextview);
         yourTextview.setMovementMethod(new ScrollingMovementMethod());
 
-
-//                <RoundedImageView
-//        android:id="@+id/foto"
-//        android:layout_width="match_parent"
-//        android:layout_height="200dp"
-//        android:scaleType="centerCrop"
-//        android:src="@drawable/bartin"
-//        app:riv_corner_radius_bottom_left="16dp"
-//        app:riv_corner_radius_bottom_right="16dp" />
-//
 
 
 
