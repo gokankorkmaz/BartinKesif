@@ -54,10 +54,12 @@ public class MainActivity extends AppCompatActivity
     private void replikListesiniDoldur() {
         replikListesi = new ArrayList<Item>();
         replikListesi.add(new Item(R.drawable.bartin, "Bartın ve Tarihi"));
-        replikListesi.add(new Item(R.drawable.merkez, "İLçe 1 "));
-        replikListesi.add(new Item(R.drawable.merkez, "İlçe 2 "));
-        replikListesi.add(new Item(R.drawable.merkez, "İlçe 3 "));
+        replikListesi.add(new Item(R.drawable.merkez, "Merkez"));
+        replikListesi.add(new Item(R.drawable.bartin, "Amasra"));
+        replikListesi.add(new Item(R.drawable.merkez, "Kurucaşile"));
+        replikListesi.add(new Item(R.drawable.merkez, "Ulus"));
     }
+
     @Override
     public void onBackPressed() {
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

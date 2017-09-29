@@ -9,7 +9,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme.NoActionBar">
 
         <activity
             android:name=".MainActivity"
@@ -32,29 +32,22 @@
 
 
         <activity
-            android:name=".CardRecyclerViewActivity2"
-            android:label="DEGİSTİRR FALFALFALF"
-         android:parentActivityName=".MainActivity">
-            <meta-data
+            android:name=".ilceler.Anasayfa">
+            <!--android:label="Bar Var Gelsene"-->
+            <!--android:theme="@style/AppTheme">-->
+
+        <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
+
         </activity>
 
-
         <activity
-            android:name=".CardRecyclerViewActivity3"
-            android:label="DEGİSECEK FALFALFALF"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/AppTheme.NoActionBar">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
-
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-            </intent-filter>
-
+            android:name=".ilceler.Merkez">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
 
         </activity>
 

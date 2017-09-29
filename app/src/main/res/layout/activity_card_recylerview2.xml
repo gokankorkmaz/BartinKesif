@@ -12,13 +12,13 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#46E6FF"
-        tools:context="kodluyoruz.com.bartinkesif.CardRecyclerViewActivity2">
+        tools:context="kodluyoruz.com.bartinkesif.ilceler.Anasayfa">
 
 
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="300dp"
             android:src="@drawable/bartin" />
 
 
@@ -30,7 +30,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/imageView"
             android:gravity="left"
-            android:maxLines="50"
+            android:maxLines="500"
             android:scrollbars="vertical"
             android:text="\nParthenia'dan Bartın’a dönüşen adın kaynağı Parthenios'dur.Bartın Irmağının antik çağdaki adı olan Parthenios; Yunan mitolojisinde, Tanrıların Babası OKENAUS’un çocukları olan yüzlerce tanrıdan birisi ve Sular Tanrısı’dır. Sular ilahı veya Muhteşem akan su anlamlarına gelir.\n\n
 

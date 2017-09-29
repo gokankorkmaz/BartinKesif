@@ -56,7 +56,7 @@ public class Adapter extends RecyclerView.Adapter<ViewHolder> {
             public void onClick(View view) {
                 //TODO Buranın normalde bu sekilde calisması lazım cardview icinde resim ve yazı oldugu icin alta gerek yok KONTROL
 
-//                Intent intent = new Intent(view.getContext(), CardRecyclerViewActivity2.class);
+//                Intent intent = new Intent(view.getContext(), Anasayfa.class);
 //                view.getContext().startActivity(intent);
             }
         });

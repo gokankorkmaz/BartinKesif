@@ -1,21 +1,16 @@
 package kodluyoruz.com.bartinkesif;
 
-import android.content.Context;
 import android.content.Intent;
-import android.media.Image;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.makeramen.roundedimageview.RoundedImageView;
 
-import org.w3c.dom.Text;
+import kodluyoruz.com.bartinkesif.ilceler.Anasayfa;
+import kodluyoruz.com.bartinkesif.ilceler.Merkez;
 
 /**
  * Created by GokhanKorkmaz on 24.09.2017.
@@ -30,9 +25,9 @@ import org.w3c.dom.Text;
 
 public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
-        RoundedImageView foto;
-        TextView textView;
-CardView cardView;
+    RoundedImageView foto;
+    TextView textView;
+    CardView cardView;
 
     public ViewHolder(final View itemView) {
         super(itemView);
@@ -42,7 +37,7 @@ CardView cardView;
 
         textView = (TextView) itemView.findViewById(R.id.textView);
         foto = (RoundedImageView) itemView.findViewById(R.id.foto);
-        cardView=(CardView) itemView.findViewById(R.id.cardView);
+        cardView = (CardView) itemView.findViewById(R.id.cardView);
         cardView.setOnClickListener(this);
 
     }
@@ -52,16 +47,17 @@ CardView cardView;
     public void onClick(View view) {
 
         //Adaptörün pozisyonunu aldım.Hangi cardview'a tıklandıgını anlayıp ona gore islem yaptırıyorum
-        int position=getAdapterPosition();
-         switch (position){
+        int position = getAdapterPosition();
+        switch (position) {
             case 0:
-                Intent niyet=new Intent(view.getContext(),CardRecyclerViewActivity2.class);
+                Intent niyet = new Intent(view.getContext(), Anasayfa.class);
                 view.getContext().startActivity(niyet);
                 break;
             case 1:
-        Log.e("TAG","Suan 1'nci case girdi");
+                Intent niyet2 = new Intent(view.getContext(), Merkez.class);
+                view.getContext().startActivity(niyet2);
         }
-//        Intent niyet=new Intent(view.getContext(),CardRecyclerViewActivity2.class);
+//        Intent niyet=new Intent(view.getContext(),Anasayfa.class);
 //        view.getContext().startActivity(niyet);
-     }
+    }
 }
