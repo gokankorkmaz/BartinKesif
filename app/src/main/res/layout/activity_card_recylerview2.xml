@@ -1,30 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#46E6FF"
-    tools:context="kodluyoruz.com.bartinkesif.CardRecyclerViewActivity2">
+    android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/imageView"
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:src="@drawable/bartin" />
+        android:layout_height="match_parent"
+        android:background="#46E6FF"
+        tools:context="kodluyoruz.com.bartinkesif.CardRecyclerViewActivity2">
 
 
-    <!--android:layout_below="@+id/imageView"-->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/bartin" />
 
-    <TextView
-        android:id="@+id/yourTextview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/imageView"
-        android:gravity="left"
-        android:maxLines="50"
-        android:scrollbars="vertical"
-        android:text="\nPARTHENİA'dan Bartın’a dönüşen adın kaynağı PARTHENİOS dur. Bartın Irmağının antik çağdaki adı olan Parthenios; Yunan mitolojisinde, Tanrıların Babası OKENAUS’un çocukları olan yüzlerce tanrıdan birisi ve Sular Tanrısı’dır. Sular ilahı veya Muhteşem akan su anlamlarına gelir.\n\n
+
+        <!--android:layout_below="@+id/imageView"-->
+
+        <TextView
+            android:id="@+id/yourTextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:gravity="left"
+            android:maxLines="50"
+            android:scrollbars="vertical"
+            android:text="\nParthenia'dan Bartın’a dönüşen adın kaynağı Parthenios'dur.Bartın Irmağının antik çağdaki adı olan Parthenios; Yunan mitolojisinde, Tanrıların Babası OKENAUS’un çocukları olan yüzlerce tanrıdan birisi ve Sular Tanrısı’dır. Sular ilahı veya Muhteşem akan su anlamlarına gelir.\n\n
 
 Antik çağda, Parthenios adı verilen Bartın Irmağının kenarında kurulan Bartın Kentinin PARTHENİA adıyla anıldığı ve zamanla Bartın’a dönüştüğü yazılı kaynaklardan anlaşılmaktadır.\n\n
 
@@ -50,8 +58,7 @@ Bartın’ın halen Merkez, Amasra, Ulus ve Kurucaşile olmak üzere 4 ilçesi v
 "
 
 
-
-        android:textColor="#000000"
-        android:textSize="14sp" />
-
-</RelativeLayout>
+            android:textColor="#000000"
+            android:textSize="14sp" />
+    </RelativeLayout>
+</ScrollView>

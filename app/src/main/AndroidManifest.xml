@@ -10,46 +10,42 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-    <activity
-        android:name=".detayActivity"
-        android:label="Bartın ve Tarihi"
-        android:parentActivityName=".MainActivity">
-        <meta-data
-            android:name="android.support.PARENT_ACTIVITY"
-            android:value=".MainActivity" />
-    </activity>
+        <activity
+            android:name=".detayActivity"
+            android:label="Bartın ve Tarihi"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
 
 
-    <activity
-        android:name=".CardRecyclerViewActivity2"
-        android:label="DEGİSTİRR FALFALFALF"
-        android:theme="@style/AppTheme.NoActionBar"
-        android:parentActivityName=".MainActivity">
-        <meta-data
-            android:name="android.support.PARENT_ACTIVITY"
-            android:value=".MainActivity" />
+        <activity
+            android:name=".CardRecyclerViewActivity2"
+            android:label="DEGİSTİRR FALFALFALF"
+         android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
 
 
-
-
-
-    </activity>
         <activity
             android:name=".CardRecyclerViewActivity3"
             android:label="DEGİSECEK FALFALFALF"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />

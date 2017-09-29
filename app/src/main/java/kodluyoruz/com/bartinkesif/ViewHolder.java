@@ -31,7 +31,7 @@ import org.w3c.dom.Text;
 public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
         RoundedImageView foto;
-        TextView replik;
+        TextView textView;
 CardView cardView;
 
     public ViewHolder(final View itemView) {
@@ -40,7 +40,7 @@ CardView cardView;
 
         //Burada yukarıda tanımladıgım ve layout dosyamda olan ogelere erisiyorum
 
-        replik = (TextView) itemView.findViewById(R.id.replik);
+        textView = (TextView) itemView.findViewById(R.id.textView);
         foto = (RoundedImageView) itemView.findViewById(R.id.foto);
         cardView=(CardView) itemView.findViewById(R.id.cardView);
         cardView.setOnClickListener(this);
@@ -50,7 +50,18 @@ CardView cardView;
 
     @Override
     public void onClick(View view) {
-        Intent niyet=new Intent(view.getContext(),CardRecyclerViewActivity2.class);
-        view.getContext().startActivity(niyet);
+
+        //Adaptörün pozisyonunu aldım.Hangi cardview'a tıklandıgını anlayıp ona gore islem yaptırıyorum
+        int position=getAdapterPosition();
+         switch (position){
+            case 0:
+                Intent niyet=new Intent(view.getContext(),CardRecyclerViewActivity2.class);
+                view.getContext().startActivity(niyet);
+                break;
+            case 1:
+        Log.e("TAG","Suan 1'nci case girdi");
+        }
+//        Intent niyet=new Intent(view.getContext(),CardRecyclerViewActivity2.class);
+//        view.getContext().startActivity(niyet);
      }
 }

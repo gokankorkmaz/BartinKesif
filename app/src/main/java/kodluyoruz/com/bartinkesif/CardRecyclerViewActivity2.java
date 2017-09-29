@@ -19,25 +19,11 @@ public class CardRecyclerViewActivity2 extends MainActivity {
         setContentView(R.layout.activity_card_recylerview2);
 
 
-        //ActionBar Ekleme
-        ActionBar actionBar=getSupportActionBar();
-        actionBar.setDisplayHomeAsUpEnabled(true);
-        actionBar.setTitle("Bartın ve Tarihi");
-        actionBar.show();
-
         TextView yourTextview = (TextView)findViewById(R.id. yourTextview);
-        yourTextview.setMovementMethod(new ScrollingMovementMethod());
-
-
-
-
+        //yourTextview.setMovementMethod(new ScrollingMovementMethod());
 
 
     }
-
-
-
-
 
 
 }
