@@ -8,12 +8,12 @@ import kodluyoruz.com.bartinkesif.MainActivity;
 import kodluyoruz.com.bartinkesif.R;
 
 
-public class Merkez extends MainActivity {
+public class Kurucasile extends MainActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_card_recylerview3merkez);
+        setContentView(R.layout.kurucasaile);
 
 
         TextView yourTextview = (TextView)findViewById(R.id.textView);
@@ -22,7 +22,7 @@ public class Merkez extends MainActivity {
     }
     @Override
     public void onBackPressed() {
-        Intent niyet = new Intent(Merkez.this,MainActivity.class);
+        Intent niyet = new Intent(Kurucasile.this,MainActivity.class);
         startActivity(niyet);
     }
 

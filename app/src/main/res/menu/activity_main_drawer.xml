@@ -56,12 +56,9 @@
 
     </group>
 
-    <item android:title="Communicate">
+    <item android:title="İletişim">
         <menu>
-            <item
-                android:id="@+id/iletisim"
-                android:icon="@drawable/ic_menu_share"
-                android:title="İletişim" />
+
             <item
                 android:id="@+id/hakkinda"
                 android:icon="@drawable/ic_menu_send"

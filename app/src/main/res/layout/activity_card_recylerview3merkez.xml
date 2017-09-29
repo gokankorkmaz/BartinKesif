@@ -25,7 +25,7 @@
         <!--android:layout_below="@+id/imageView"-->
 
         <TextView
-            android:id="@+id/yourTextview"
+            android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/imageView"

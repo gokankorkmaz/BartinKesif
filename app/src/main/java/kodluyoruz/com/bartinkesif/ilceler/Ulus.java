@@ -8,21 +8,19 @@ import kodluyoruz.com.bartinkesif.MainActivity;
 import kodluyoruz.com.bartinkesif.R;
 
 
-public class Merkez extends MainActivity {
+public class Ulus extends MainActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_card_recylerview3merkez);
-
+        setContentView(R.layout.ulus);
 
         TextView yourTextview = (TextView)findViewById(R.id.textView);
-
 
     }
     @Override
     public void onBackPressed() {
-        Intent niyet = new Intent(Merkez.this,MainActivity.class);
+        Intent niyet = new Intent(Ulus.this,MainActivity.class);
         startActivity(niyet);
     }
 

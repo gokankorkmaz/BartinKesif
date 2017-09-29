@@ -43,14 +43,17 @@
         </activity>
 
         <activity
-            android:name=".ilceler.Merkez">
-            <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.MAIN" />-->
-                <!--<category android:name="android.intent.category.LAUNCHER" />-->
-            <!--</intent-filter>-->
+            android:name=".ilceler.Merkez"/>
 
-        </activity>
 
-    </application>
+        <activity
+            android:name=".ilceler.Amasra"/>
+
+        <activity
+            android:name=".ilceler.Kurucasile"/>
+        <activity
+            android:name=".ilceler.Ulus"/>
+
+     </application>
 
 </manifest>

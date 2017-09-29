@@ -106,14 +106,19 @@ public class MainActivity extends AppCompatActivity
             Intent niyet = new Intent(MainActivity.this, MainActivity.class);
             startActivity(niyet);
         } else if (id == R.id.goller) {
+            //TODO Buralar düzelecek
             Fragment1 fragment1=new Fragment1();
             fragmentTransaction.replace(R.id.content_frame,fragment1);
             fragmentTransaction.commit();
         } else if (id == R.id.antik) {
+            //TODO Buralar düzelecek
+
             Fragment2 fragment2=new Fragment2();
             fragmentTransaction.replace(R.id.content_frame,fragment2);
             fragmentTransaction.commit();
         } else if (id == R.id.cami) {
+            //TODO Buralar düzelecek
+
             Fragment3 fragment3=new Fragment3();
             fragmentTransaction.replace(R.id.content_frame,fragment3);
             fragmentTransaction.commit();
@@ -125,10 +130,8 @@ public class MainActivity extends AppCompatActivity
 
         }else if (id == R.id.diger) {
 
-        }else if (id == R.id.iletisim) {
 
         }else if (id == R.id.hakkinda) {
-            Toast.makeText(this, "asdfasfaf", Toast.LENGTH_SHORT).show();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
