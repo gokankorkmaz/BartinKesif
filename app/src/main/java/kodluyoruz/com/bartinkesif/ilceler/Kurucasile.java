@@ -16,7 +16,7 @@ public class Kurucasile extends MainActivity {
         setContentView(R.layout.kurucasaile);
 
 
-        TextView yourTextview = (TextView)findViewById(R.id.textView);
+        TextView textView = (TextView)findViewById(R.id.textView);
 
 
     }

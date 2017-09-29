@@ -16,7 +16,7 @@ public class Anasayfa extends MainActivity {
         setContentView(R.layout.activity_card_recylerview2);
 
 
-        TextView yourTextview = (TextView)findViewById(R.id.textView);
+        TextView textView = (TextView)findViewById(R.id.textView);
         //yourTextview.setMovementMethod(new ScrollingMovementMethod());
         //ActionBar Ekleme
 //        ActionBar actionBar=getSupportActionBar();

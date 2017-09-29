@@ -15,7 +15,7 @@ public class Ulus extends MainActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.ulus);
 
-        TextView yourTextview = (TextView)findViewById(R.id.textView);
+        TextView textView = (TextView)findViewById(R.id.textView);
 
     }
     @Override

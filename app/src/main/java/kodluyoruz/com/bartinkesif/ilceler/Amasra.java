@@ -16,7 +16,7 @@ public class Amasra extends MainActivity {
         setContentView(R.layout.amasra);
 
 
-        TextView yourTextview = (TextView)findViewById(R.id.textView);
+        TextView textView = (TextView)findViewById(R.id.textView);
 
 
     }

@@ -16,7 +16,7 @@ public class Merkez extends MainActivity {
         setContentView(R.layout.activity_card_recylerview3merkez);
 
 
-        TextView yourTextview = (TextView)findViewById(R.id.textView);
+        TextView textView = (TextView)findViewById(R.id.textView);
 
 
     }
