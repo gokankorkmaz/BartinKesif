@@ -49,6 +49,8 @@ public class Adapter extends RecyclerView.Adapter<ViewHolder> {
         Item item = itemList.get(position);
 
 
+    //TODO Farklı boyutlar icin resource dosyaları ayarla. hdpi,mdpi,ldpi,xldpi
+
 
         holder.textView.setText(item.getReplik());
         holder.textView.setOnClickListener(new View.OnClickListener() {
