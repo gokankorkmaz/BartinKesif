@@ -13,7 +13,7 @@ public class Merkez extends MainActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_card_recylerview3merkez);
+        setContentView(R.layout.merkez);
 
 
         TextView textView = (TextView)findViewById(R.id.textView);

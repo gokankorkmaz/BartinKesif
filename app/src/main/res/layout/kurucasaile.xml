@@ -21,7 +21,6 @@
             android:layout_height="300dp"
             android:src="@drawable/amasra" />
 
-
         <!--android:layout_below="@+id/imageView"-->
 
         <TextView
@@ -34,9 +33,7 @@
             android:scrollbars="vertical"
             android:text="\n1990 sayımına göre toplam nüfusu 19.857 olup, 6510’u ilçe merkezinde, 13.347’si köylerde yaşamaktadır. Merkez bucağa bağlı 28 köyü vardır. İlçe topraklarının iç kesimlerinde alçak dağlar, kıyı kesimlerinde ise düz kısımlar yer alır. Dağlar gür ormanlarla kaplıdır.\n\n
 
-Ekonomisi turizm ve ormancılığa dayalıdır. Ormanla iç içe olan ilçe, tabii plajları ve tarihi eserleriyle ilgi çeken turistik bir merkezdir. Akarsu vadilerinde meyve ve sebze yetiştirilir. İlçe merkezi deniz kıyısında kurulmuş küçük bir kıyı şehridir. Bartın’a bağlı bir bucakken 9 Mayıs 1990’da ilçe oldu. Bartın’ın 1991 senesinde il olması üzerine, Bartın’a bağlandı.\n "
-
-
+Ekonomisi turizm ve ormancılığa dayalıdır. Ormanla iç içe olan ilçe, tabii plajları ve tarihi eserleriyle ilgi çeken turistik bir merkezdir. Akarsu vadilerinde meyve ve sebze yetiştirilir. İlçe merkezi deniz kıyısında kurulmuş küçük bir kıyı şehridir. Bartın’a bağlı bir bucakken 9 Mayıs 1990’da ilçe oldu. Bartın’ın 1991 senesinde il olması üzerine, Bartın’a bağlandı.\n\n\n"
 
             android:textColor="#000000"
             android:textSize="14sp" />
