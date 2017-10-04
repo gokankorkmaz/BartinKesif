@@ -34,7 +34,6 @@
                 android:layout_height="300dp"
                 android:src="@drawable/amasra" />
 
-            <!--android:layout_below="@+id/imageView"-->
 
             <TextView
                 android:id="@+id/textView"

@@ -54,11 +54,11 @@ public class MainActivity extends AppCompatActivity
 
     private void replikListesiniDoldur() {
         replikListesi = new ArrayList<Item>();
-        replikListesi.add(new Item(R.drawable.bartin, "Bartın ve Tarihi"));
-        replikListesi.add(new Item(R.drawable.merkez, "Merkez"));
-        replikListesi.add(new Item(R.drawable.bartin, "Amasra"));
-        replikListesi.add(new Item(R.drawable.merkez, "Kurucaşile"));
-        replikListesi.add(new Item(R.drawable.merkez, "Ulus"));
+//        replikListesi.add(new Item(R.drawable.bartin, "Bartın ve Tarihi"));
+//        replikListesi.add(new Item(R.drawable.merkez, "Merkez"));
+//        replikListesi.add(new Item(R.drawable.bartin, "Amasra"));
+//        replikListesi.add(new Item(R.drawable.merkez, "Kurucaşile"));
+//        replikListesi.add(new Item(R.drawable.merkez, "Ulus"));
     }
 
     @Override
@@ -104,13 +104,16 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.ilceler) {
-            Intent niyet = new Intent(MainActivity.this, MainActivity.class);
-            startActivity(niyet);
-        } else if (id == R.id.goller) {
-            //TODO Buralar düzelecek
+//            Intent niyet = new Intent(MainActivity.this, MainActivity.class);
+//            startActivity(niyet);
             Fragment1 fragment1=new Fragment1();
             fragmentTransaction.replace(R.id.content_frame,fragment1);
             fragmentTransaction.commit();
+        } else if (id == R.id.goller) {
+            //TODO Buralar düzelecek
+//            Fragment1 fragment1=new Fragment1();
+//            fragmentTransaction.replace(R.id.content_frame,fragment1);
+//            fragmentTransaction.commit();
         } else if (id == R.id.antik) {
             //TODO Buralar düzelecek
 

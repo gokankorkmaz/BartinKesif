@@ -1,38 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#46E6FF"
-        tools:context="kodluyoruz.com.bartinkesif.ilceler.Merkez">
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
 
 
-        <ImageView
-            android:id="@+id/imageView"
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
             android:layout_width="match_parent"
-            android:layout_height="300dp"
-            android:src="@drawable/merkez" />
+            android:layout_height="match_parent"
+            android:background="#46E6FF"
+            tools:context="kodluyoruz.com.bartinkesif.ilceler.Merkez">
 
 
-        <!--android:layout_below="@+id/imageView"-->
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/merkez" />
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/imageView"
-            android:gravity="left"
-            android:maxLines="500"
-            android:scrollbars="vertical"
-            android:text="\n1990 sayımına göre toplam nüfusu 133.942 olup, 30.142’si ilçe merkezinde 103.800’ü bucak ve köylerde yaşamaktadır. Merkez bucağa bağlı 82, Arıt bucağına bağlı 16, Kozcağız bucağına bağlı 35 köyü vardır.\n\n
+
+            <!--android:layout_below="@+id/imageView"-->
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView"
+                android:gravity="left"
+                android:maxLines="500"
+                android:scrollbars="vertical"
+                android:text="\n1990 sayımına göre toplam nüfusu 133.942 olup, 30.142’si ilçe merkezinde 103.800’ü bucak ve köylerde yaşamaktadır. Merkez bucağa bağlı 82, Arıt bucağına bağlı 16, Kozcağız bucağına bağlı 35 köyü vardır.\n\n
 
 İlçe topraklarının doğu ve güneyi dağlarla kaplı olup, orta kesimi düzdür. Dağlar kayın, köknar, meşe ve çam ormanları ile kaplıdır. En önemli akarsuyu Bartın Çayıdır. Bartın Çayı Vadisinin genişlediği bölgede verimli Bartın Ovası yer alır.\n\n
 
@@ -43,7 +56,9 @@ Ekonomisi tarım ve ormancılığa dayalıdır. Başlıca tarım ürünleri mıs
 "
 
 
-            android:textColor="#000000"
-            android:textSize="14sp" />
-    </RelativeLayout>
-</ScrollView>
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

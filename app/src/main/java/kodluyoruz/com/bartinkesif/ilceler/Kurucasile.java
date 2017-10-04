@@ -1,14 +1,11 @@
 package kodluyoruz.com.bartinkesif.ilceler;
 
-import android.app.Activity;
-import android.content.Intent;
+
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.widget.TextView;
-
-import kodluyoruz.com.bartinkesif.MainActivity;
 import kodluyoruz.com.bartinkesif.R;
 
 
