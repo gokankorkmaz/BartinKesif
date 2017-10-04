@@ -53,6 +53,7 @@ public class Adapter extends RecyclerView.Adapter<ViewHolder> {
 
 
         holder.textView.setText(item.getReplik());
+        holder.foto.setImageResource(item.getFoto());
         holder.textView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
