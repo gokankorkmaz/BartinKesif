@@ -8,6 +8,9 @@ import android.support.v7.widget.RecyclerView;
 
 import java.util.ArrayList;
 
+import kodluyoruz.com.bartinkesif.Adapter.Adapter;
+import kodluyoruz.com.bartinkesif.Adapter.Item;
+
 
 public class detayActivity extends AppCompatActivity {
     CardView cardView;
@@ -19,7 +22,7 @@ public class detayActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.anasayfa);
-        replikListesiniDoldur();
+        //itemListesiniDoldur();
         recyclerView = (RecyclerView) findViewById(R.id.my_recycler_view);
         adapter = new Adapter(replikListesi, this, R.layout.item_card_replik);
         recyclerView.setAdapter(adapter);
@@ -34,13 +37,13 @@ public class detayActivity extends AppCompatActivity {
 
     }
 
-    private void replikListesiniDoldur() {
-        replikListesi = new ArrayList<Item>();
-        replikListesi.add(new Item(R.drawable.bartin, "Bartın ve Tarihi"));
-        replikListesi.add(new Item(R.drawable.merkez, "İLçe 1 "));
-        replikListesi.add(new Item(R.drawable.merkez, "İlçe 2 "));
-        replikListesi.add(new Item(R.drawable.merkez, "İlçe 3 "));
-    }
+//    private void itemListesiniDoldur() {
+//        replikListesi = new ArrayList<Item>();
+//        replikListesi.add(new Item(R.drawable.bartin, "Bartın ve Tarihi"));
+//        replikListesi.add(new Item(R.drawable.merkez, "İLçe 1 "));
+//        replikListesi.add(new Item(R.drawable.merkez, "İlçe 2 "));
+//        replikListesi.add(new Item(R.drawable.merkez, "İlçe 3 "));
+//    }
 
 
 }

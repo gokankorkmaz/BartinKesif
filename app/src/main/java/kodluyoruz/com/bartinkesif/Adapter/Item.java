@@ -1,4 +1,4 @@
-package kodluyoruz.com.bartinkesif;
+package kodluyoruz.com.bartinkesif.Adapter;
 
 /**
  * Created by GokhanKorkmaz on 24.09.2017.

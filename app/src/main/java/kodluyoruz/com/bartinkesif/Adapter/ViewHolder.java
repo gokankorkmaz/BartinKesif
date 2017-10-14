@@ -1,19 +1,19 @@
-package kodluyoruz.com.bartinkesif;
+package kodluyoruz.com.bartinkesif.Adapter;
 
 import android.content.Intent;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
 import com.makeramen.roundedimageview.RoundedImageView;
 
-import kodluyoruz.com.bartinkesif.ilceler.Amasra;
-import kodluyoruz.com.bartinkesif.ilceler.Anasayfa;
-import kodluyoruz.com.bartinkesif.ilceler.Kurucasile;
-import kodluyoruz.com.bartinkesif.ilceler.Merkez;
-import kodluyoruz.com.bartinkesif.ilceler.Ulus;
+import kodluyoruz.com.bartinkesif.Fragment.Amasra;
+import kodluyoruz.com.bartinkesif.Fragment.Anasayfa;
+import kodluyoruz.com.bartinkesif.Fragment.Kurucasile;
+import kodluyoruz.com.bartinkesif.Fragment.Merkez;
+import kodluyoruz.com.bartinkesif.Fragment.Ulus;
+import kodluyoruz.com.bartinkesif.R;
 
 /**
  * Created by GokhanKorkmaz on 24.09.2017.
@@ -75,7 +75,5 @@ public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickL
                 break;
 
         }
-//        Intent niyet=new Intent(view.getContext(),Anasayfa.class);
-//        view.getContext().startActivity(niyet);
-    }
+     }
 }

@@ -1,22 +1,20 @@
-package kodluyoruz.com.bartinkesif.ilceler;
-
-import android.content.Intent;
+package kodluyoruz.com.bartinkesif.Fragment;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.widget.TextView;
 
-import kodluyoruz.com.bartinkesif.MainActivity;
 import kodluyoruz.com.bartinkesif.R;
 
 
-public class Merkez extends AppCompatActivity {
+public class Amasra extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.merkez);
+        setContentView(R.layout.amasra);
+
 
 
         TextView textView = (TextView)findViewById(R.id.textView);

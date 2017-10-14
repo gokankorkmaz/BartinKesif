@@ -1,20 +1,20 @@
-package kodluyoruz.com.bartinkesif.ilceler;
+package kodluyoruz.com.bartinkesif.Fragment;
+
+
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.widget.TextView;
-
 import kodluyoruz.com.bartinkesif.R;
 
 
-public class Amasra extends AppCompatActivity {
+public class Kurucasile extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.amasra);
-
+        setContentView(R.layout.kurucasaile);
 
 
         TextView textView = (TextView)findViewById(R.id.textView);
@@ -24,9 +24,8 @@ public class Amasra extends AppCompatActivity {
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
-
-
     }
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // handle arrow click here
@@ -36,5 +35,4 @@ public class Amasra extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-
 }

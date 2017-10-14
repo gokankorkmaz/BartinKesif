@@ -1,4 +1,4 @@
-package kodluyoruz.com.bartinkesif.ilceler;
+package kodluyoruz.com.bartinkesif.Fragment;
 
 import android.content.Intent;
 import android.os.Bundle;

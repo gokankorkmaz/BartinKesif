@@ -1,4 +1,4 @@
-package kodluyoruz.com.bartinkesif.ilceler;
+package kodluyoruz.com.bartinkesif.Fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -20,13 +20,7 @@ public class Anasayfa extends AppCompatActivity {
 
 
         TextView textView = (TextView)findViewById(R.id.textView);
-        //yourTextview.setMovementMethod(new ScrollingMovementMethod());
-        //ActionBar Ekleme
-//        ActionBar actionBar=getSupportActionBar();
-//        actionBar.setDisplayHomeAsUpEnabled(true);
-//        actionBar.setTitle("Bartın ve Tarihi");
-//
-//        actionBar.show();
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
 
         setSupportActionBar(toolbar);

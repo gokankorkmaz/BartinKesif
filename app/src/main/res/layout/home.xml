@@ -25,14 +25,16 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#46E6FF"
-        tools:context="kodluyoruz.com.bartinkesif.ilceler.Anasayfa">
+        android:background="#FFFFFF"
+        tools:context="kodluyoruz.com.bartinkesif.Fragment.Anasayfa">
 
 
         <ImageView
+            android:scaleType="center"
+
             android:id="@+id/imageView"
             android:layout_width="match_parent"
-            android:layout_height="300dp"
+            android:layout_height="200dp"
             android:src="@drawable/bartin" />
 
 

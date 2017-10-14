@@ -32,7 +32,7 @@
 
 
         <activity
-            android:name=".ilceler.Anasayfa">
+            android:name=".Fragment.Anasayfa">
             <!--android:label="Bar Var Gelsene"-->
             <!--android:theme="@style/AppTheme">-->
 
@@ -43,16 +43,16 @@
         </activity>
 
         <activity
-            android:name=".ilceler.Merkez"/>
+            android:name=".Fragment.Merkez"/>
 
 
         <activity
-            android:name=".ilceler.Amasra"/>
+            android:name=".Fragment.Amasra"/>
 
         <activity
-            android:name=".ilceler.Kurucasile"/>
+            android:name=".Fragment.Kurucasile"/>
         <activity
-            android:name=".ilceler.Ulus"/>
+            android:name=".Fragment.Ulus"/>
 
      </application>
 

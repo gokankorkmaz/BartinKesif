@@ -1,4 +1,4 @@
-package kodluyoruz.com.bartinkesif;
+package kodluyoruz.com.bartinkesif.Adapter;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -7,6 +7,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import java.util.ArrayList;
+
+import kodluyoruz.com.bartinkesif.R;
 
 /**
  * Created by GokhanKorkmaz on 24.09.2017.
@@ -57,20 +59,12 @@ public class Adapter extends RecyclerView.Adapter<ViewHolder> {
         holder.textView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //TODO Buranın normalde bu sekilde calisması lazım cardview icinde resim ve yazı oldugu icin alta gerek yok KONTROL
 
-//                Intent intent = new Intent(view.getContext(), Anasayfa.class);
-//                view.getContext().startActivity(intent);
             }
         });
 
 
     }
-
-
-    //TODO Bu kütüphaneyi navigatordaki resim için indirmistim kaldırınca hata verecek
-    //    compile 'de.hdodenhof:circleimageview:2.1.0'
-
 
     @Override
     public int getItemCount() {
