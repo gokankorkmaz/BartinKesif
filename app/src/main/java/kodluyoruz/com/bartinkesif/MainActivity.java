@@ -18,7 +18,7 @@ import java.util.ArrayList;
 
 import kodluyoruz.com.bartinkesif.Adapter.Adapter;
 import kodluyoruz.com.bartinkesif.Adapter.Item;
-import kodluyoruz.com.bartinkesif.Fragment.Fragment1;
+import kodluyoruz.com.bartinkesif.Fragment.FragmentAnasayfa;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -45,21 +45,31 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        itemListesiniDoldur();
-        recyclerView = (RecyclerView) findViewById(R.id.my_recycler_view);
-        adapter = new Adapter(itemmListesi, this, R.layout.item_card_replik);
-        recyclerView.setAdapter(adapter);
+
+        //TODO isimlendirme sonrası notu degistir
+        //İlk Sayfa Açılışında FragmentAnasayfa Açılacak
+        FragmentManager fragmentManager = getFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        FragmentAnasayfa fragment1=new FragmentAnasayfa();
+        fragmentTransaction.add(R.id.content_frame,fragment1);
+        fragmentTransaction.commit();
+
+
+//        itemListesiniDoldur();
+//        recyclerView = (RecyclerView) findViewById(R.id.my_recycler_view);
+//        adapter = new Adapter(itemmListesi, this, R.layout.item_card_replik);
+//        recyclerView.setAdapter(adapter);
 
     }
 
-    private void itemListesiniDoldur() {
-        itemmListesi = new ArrayList<Item>();
-        itemmListesi.add(new Item(R.drawable.bartin, "Bartın ve Tarihi"));
-        itemmListesi.add(new Item(R.drawable.merkez, "Merkez"));
-        itemmListesi.add(new Item(R.drawable.amasra, "Amasra"));
-        itemmListesi.add(new Item(R.drawable.kurucasile, "Kurucaşile"));
-        itemmListesi.add(new Item(R.drawable.ulus, "Ulus"));
-    }
+//    private void itemListesiniDoldur() {
+//        itemmListesi = new ArrayList<Item>();
+//        itemmListesi.add(new Item(R.drawable.bartin, "Bartın ve Tarihi"));
+//        itemmListesi.add(new Item(R.drawable.merkez, "Merkez"));
+//        itemmListesi.add(new Item(R.drawable.amasra, "Amasra"));
+//        itemmListesi.add(new Item(R.drawable.kurucasile, "Kurucaşile"));
+//        itemmListesi.add(new Item(R.drawable.ulus, "Ulus"));
+//    }
 
 
     @Override
@@ -106,7 +116,7 @@ public class MainActivity extends AppCompatActivity
 
         if (id == R.id.ilceler) {
 
-            Fragment1 fragment1 = new Fragment1();
+            FragmentAnasayfa fragment1 = new FragmentAnasayfa();
             fragmentTransaction.replace(R.id.content_frame, fragment1);
             fragmentTransaction.commit();
         } else if (id == R.id.goller) {

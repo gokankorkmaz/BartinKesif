@@ -16,7 +16,7 @@ import kodluyoruz.com.bartinkesif.Adapter.Item;
 import kodluyoruz.com.bartinkesif.R;
 
 
-public class Fragment1 extends Fragment {
+public class FragmentAnasayfa extends Fragment {
     CardView cardView;
     RecyclerView recyclerView;
     Adapter adapter;
@@ -25,7 +25,7 @@ public class Fragment1 extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.layout1, container, false);
+        View view = inflater.inflate(R.layout.layout_home_fragment, container, false);
         itemListesiniDoldur();
         recyclerView = (RecyclerView) view.findViewById(R.id.recycler_view);
 
