@@ -10,12 +10,12 @@ import android.widget.TextView;
 import kodluyoruz.com.bartinkesif.R;
 
 
-public class Anasayfa extends AppCompatActivity {
+public class Ulukaya extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.home);
+        setContentView(R.layout.ulukayadetay);
 
 
         TextView textView = (TextView)findViewById(R.id.textView);

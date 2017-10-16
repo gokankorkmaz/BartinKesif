@@ -32,8 +32,8 @@
                 android:id="@+id/imageView"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:scaleType="center"
-                android:src="@drawable/amasra" />
+                android:scaleType="centerCrop"
+                android:src="@drawable/kurucasile" />
 
 
             <TextView
@@ -44,12 +44,11 @@
                 android:gravity="left"
                 android:maxLines="500"
                 android:scrollbars="vertical"
-                android:text="\n1990 sayımına göre toplam nüfusu 19.857 olup, 6510’u ilçe merkezinde, 13.347’si köylerde yaşamaktadır. Merkez bucağa bağlı 28 köyü vardır. İlçe topraklarının iç kesimlerinde alçak dağlar, kıyı kesimlerinde ise düz kısımlar yer alır. Dağlar gür ormanlarla kaplıdır.\n\n
+                android:text="Kurucaşile, Bartın ilinin Amasra ve Ulus ile birlikte 3 ilçesinden biridir. Bartın şehir merkezine 52 km uzaklıkta Karadeniz kıyısında bulunan bir ilçedir.\n\n 3.000 yıllık bir tarihi olan ilçenin, İlk Çağ'da Fenikeliler başta olmak üzere, Miletoslu ve Megaralı gemiciler tarafından kurulan Kromna adında bir site olduğu çeşitli kaynaklarda belirtilmektedir.\n\n Roma, Bizans ve Ceneviz hakimiyetinden sonra yörede görülen ilk Türk komutanı Kutalmışoğlu Süleyman Bey'in komutasındaki Kara Tiğin'dir. Yıldırım Beyazıt 1395’de bu bölgeyi Candaroğullarından alarak Osmanlı hakimiyetine katmıştır.
 
-Ekonomisi turizm ve ormancılığa dayalıdır. Ormanla iç içe olan ilçe, tabii plajları ve tarihi eserleriyle ilgi çeken turistik bir merkezdir. Akarsu vadilerinde meyve ve sebze yetiştirilir. İlçe merkezi deniz kıyısında kurulmuş küçük bir kıyı şehridir. Bartın’a bağlı bir bucakken 9 Mayıs 1990’da ilçe oldu. Bartın’ın 1991 senesinde il olması üzerine, Bartın’a bağlandı.\n\n\n"
-
+Türkiye Cumhuriyeti'nin ilanı'ndan 1957 yılına kadar Bartın ilçesine bağlı nahiye olarak kalan Kurucaşile, 27 Haziran 1957 tarih ve 9644 sayılı Resmi Gazete'de yayınlanan 19 Haziran 1957 tarih ve 7033 sayılı kanunla ilçe olmuş ve Zonguldak iline bağlanmıştır. 1991 yılında Bartın’ın il yapılmasıyla beraber Bartın’ın ilçesi olmuştur."
                 android:textColor="#000000"
-                android:textSize="14sp" />
+                android:textSize="16sp" />
         </RelativeLayout>
     </ScrollView>
 </LinearLayout>

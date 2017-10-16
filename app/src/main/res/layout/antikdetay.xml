@@ -26,16 +26,15 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#FFFFFF"
-        tools:context="kodluyoruz.com.bartinkesif.Fragment.Ulus">
+        tools:context="kodluyoruz.com.bartinkesif.Fragment.Anasayfa">
 
 
         <ImageView
             android:scaleType="centerCrop"
-
             android:id="@+id/imageView"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:src="@drawable/ulus" />
+            android:src="@drawable/amasrakale" />
 
 
 
@@ -46,16 +45,17 @@
             android:layout_below="@+id/imageView"
             android:gravity="left"
             android:maxLines="500"
-                       android:scrollbars="vertical"
-            android:text=" Ulus, Bartın ilinin bir ilçesidir.Osmanlılar zamanında ilçe küçük bir yerleşim merkezi olarak kalmış, herhangi bir ticari, siyasi ve askeri olaya sahne olmamıştır.\n\n
+            android:scrollbars="vertical"
+            android:text="\n Küçük Liman’dan Boztepe’ye doğru yol alırken kemere köprüsüne varmadan yolun sağ tarafında yukarıya doğru uzanan yokuşlar ve  merdivenler göreceksiniz. Bu yolların her biri sizi kalenin içine götürür.\n\n Amasra Kalesinin içerisinde Cenevizlilerden kalma bir “küçük kilise”, kiliseden camiye çevrilme “Fatih Camisi” ve kale surlarının üzerinde bir çok figür halen belirgin bir şekilde durmaktadır.
 
-Ulus, Safranbolu ilçesine bağlı nahiye durumunda iken 8 Ağustos 1944 yılında ilçe olması nedeni ile Zonguldak iline bağlanmıştır. 28 Ağustos 1991 gün ve 3760 sayılı kanunla Bartın ilçesinin il olması üzerine Ulus, Bartın iline bağlanmıştır.\n\n
+Burada gözünüze çarpacak  ilginç olaylardan biri de yerli halkın ayakkabıları değerlendirme şeklidir. Ayakkabılar saksılara dönüştürülmüş hatta çaydanlıklar, yoğurt kapları, tencereler ve daha fazlası…\n\n
 
-İlçe genelde engebeli araziye sahiptir. Bölgenin esas bitki örtüsü ormandır. Denizden ortalama yüksekliği 200 metre olup, yüzölçümü 713 km² dir.
+Kalenin dört bir köşesini de kullanarak Amasra’nın manzaralarını farklı perspektiflerden görebilirsiniz.
 
-Turizm yönü henüz keşfedilmemiş 4000 kişinin yaşadığı doğa ile iç içe şirin bir ilçedir.
+Yukarıya tırmanarak yolun sonuna geldiğinizde Büyük Liman’ı göreceksiniz. Aşağıya dönüp yolu takip ederseniz kemere köprüsüne ulaşabilirsiniz. Depremler nedeniyle surlarda oluşan yarıkların arasından taş bir merdiven inmektedir burayı kullanarak Mendireğe inebilirsiniz.
 
 "
+
 
             android:textColor="#000000"
             android:textSize="16sp" />

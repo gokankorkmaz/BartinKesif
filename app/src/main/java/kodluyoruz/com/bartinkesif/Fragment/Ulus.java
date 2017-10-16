@@ -1,13 +1,12 @@
 package kodluyoruz.com.bartinkesif.Fragment;
 
-import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.widget.TextView;
 
-import kodluyoruz.com.bartinkesif.MainActivity;
 import kodluyoruz.com.bartinkesif.R;
 
 
@@ -18,7 +17,14 @@ public class Ulus extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.ulus);
 
-        TextView textView = (TextView)findViewById(R.id.textView);
+        TextView textView = (TextView) findViewById(R.id.textView);
+
+
+        Typeface font = Typeface.createFromAsset(getAssets(),
+                "raleway_medium.ttf");
+        textView.setTypeface(font);
+
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
 
         setSupportActionBar(toolbar);
@@ -28,6 +34,7 @@ public class Ulus extends AppCompatActivity {
 
 
     }
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // handle arrow click here

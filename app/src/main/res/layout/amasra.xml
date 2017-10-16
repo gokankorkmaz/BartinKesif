@@ -31,12 +31,11 @@
 
 
         <ImageView
-            android:scaleType="center"
-
+            android:scaleType="centerCrop"
             android:id="@+id/imageView"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:src="@drawable/amasra" />
+            android:src="@drawable/bartin" />
 
 
 
@@ -48,12 +47,13 @@
             android:gravity="left"
             android:maxLines="500"
             android:scrollbars="vertical"
-            android:text="1990 sayımına göre toplam nüfusu 19.857 olup, 6510’u ilçe merkezinde, 13.347’si köylerde yaşamaktadır. Merkez bucağa bağlı 28 köyü vardır. İlçe topraklarının iç kesimlerinde alçak dağlar, kıyı kesimlerinde ise düz kısımlar yer alır. Dağlar gür ormanlarla kaplıdır.\n\n
+            android:text=" Amasra, Batı Karadeniz Bölgesinde, Bartın iline bağlı bir ilçedir.\n\n
 
-Ekonomisi turizm ve ormancılığa dayalıdır. Ormanla iç içe olan ilçe, tabii plajları ve tarihi eserleriyle ilgi çeken turistik bir merkezdir. Akarsu vadilerinde meyve ve sebze yetiştirilir. İlçe merkezi deniz kıyısında kurulmuş küçük bir kıyı şehridir. Bartın’a bağlı bir bucakken 9 Mayıs 1990’da ilçe oldu. Bartın’ın 1991 senesinde il olması üzerine, Bartın’a bağlandı.\n\n\n\n "
+Denize doğru uzanmış bir burun, burnun iki yanında korunaklı birer liman görevi gören iki koy ve ana karaya bağlı bağımsız adalarına sahip olan Amasra, 3000 yıllık tarihi, hem çekicilik ve balıkçılığa dayanan yerel sanatları, hem de kendini çevreleyen ormanlık alanlarına sahip bir yerleşim yeridir.\n\n Amasra halen özgün balık lokantaları, otelleri ve ev pansiyonlarına sahip bir turizm bölgesidir.\n\n
 
+Sanatçı Barış Akarsu'nun memleketidir. Akarsu, Ocak 2007'de çıkardığı son kasetini Amasralılara ithaf etmiştir."
             android:textColor="#000000"
-            android:textSize="14sp" />
+            android:textSize="16sp" />
 
     </RelativeLayout>
     </ScrollView>

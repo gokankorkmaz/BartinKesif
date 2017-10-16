@@ -8,24 +8,22 @@ import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.CardView;
-import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-
-import java.util.ArrayList;
-
 import kodluyoruz.com.bartinkesif.Adapter.Adapter;
-import kodluyoruz.com.bartinkesif.Adapter.Item;
+import kodluyoruz.com.bartinkesif.Adapter.ViewHolder;
 import kodluyoruz.com.bartinkesif.Fragment.FragmentAnasayfa;
+import kodluyoruz.com.bartinkesif.Fragment.FragmentAntik;
+import kodluyoruz.com.bartinkesif.Fragment.FragmentGoller;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-    CardView cardView;
-    RecyclerView recyclerView;
     Adapter adapter;
-    ArrayList<Item> itemmListesi;
+
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,8 +44,7 @@ public class MainActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
 
-        //TODO isimlendirme sonrası notu degistir
-        //İlk Sayfa Açılışında FragmentAnasayfa Açılacak
+
         FragmentManager fragmentManager = getFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         FragmentAnasayfa fragment1=new FragmentAnasayfa();
@@ -55,22 +52,7 @@ public class MainActivity extends AppCompatActivity
         fragmentTransaction.commit();
 
 
-//        itemListesiniDoldur();
-//        recyclerView = (RecyclerView) findViewById(R.id.my_recycler_view);
-//        adapter = new Adapter(itemmListesi, this, R.layout.item_card_replik);
-//        recyclerView.setAdapter(adapter);
-
     }
-
-//    private void itemListesiniDoldur() {
-//        itemmListesi = new ArrayList<Item>();
-//        itemmListesi.add(new Item(R.drawable.bartin, "Bartın ve Tarihi"));
-//        itemmListesi.add(new Item(R.drawable.merkez, "Merkez"));
-//        itemmListesi.add(new Item(R.drawable.amasra, "Amasra"));
-//        itemmListesi.add(new Item(R.drawable.kurucasile, "Kurucaşile"));
-//        itemmListesi.add(new Item(R.drawable.ulus, "Ulus"));
-//    }
-
 
     @Override
     public void onBackPressed() {
@@ -121,10 +103,13 @@ public class MainActivity extends AppCompatActivity
             fragmentTransaction.commit();
         } else if (id == R.id.goller) {
             //TODO
-
+            FragmentGoller fragmentGol = new FragmentGoller();
+            fragmentTransaction.replace(R.id.content_frame, fragmentGol);
+            fragmentTransaction.commit();
         } else if (id == R.id.antik) {
-            //TODO
-
+            FragmentAntik fragmentAntik = new FragmentAntik();
+            fragmentTransaction.replace(R.id.content_frame, fragmentAntik);
+            fragmentTransaction.commit();
 
         } else if (id == R.id.cami) {
             //TODO

@@ -12,7 +12,7 @@
         <item
             android:id="@+id/goller"
             android:icon="@drawable/lake"
-            android:title="Göller" />
+            android:title="Şelaleler" />
 
 
 

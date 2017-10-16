@@ -8,11 +8,13 @@ import android.widget.TextView;
 
 import com.makeramen.roundedimageview.RoundedImageView;
 
-import kodluyoruz.com.bartinkesif.Fragment.Amasra;
-import kodluyoruz.com.bartinkesif.Fragment.Anasayfa;
-import kodluyoruz.com.bartinkesif.Fragment.FragmentGoller;
+import kodluyoruz.com.bartinkesif.Fragment.Aksu;
+import kodluyoruz.com.bartinkesif.Fragment.Antik;
+import kodluyoruz.com.bartinkesif.Fragment.DirekliKaya;
+import kodluyoruz.com.bartinkesif.Fragment.Golderesi;
 import kodluyoruz.com.bartinkesif.Fragment.Kurucasile;
-import kodluyoruz.com.bartinkesif.Fragment.Merkez;
+import kodluyoruz.com.bartinkesif.Fragment.Kuskayasi;
+import kodluyoruz.com.bartinkesif.Fragment.Ulukaya;
 import kodluyoruz.com.bartinkesif.Fragment.Ulus;
 import kodluyoruz.com.bartinkesif.R;
 
@@ -27,13 +29,13 @@ import kodluyoruz.com.bartinkesif.R;
  * Sonraki Adım:Adaptor olusturma
  */
 
-public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+public class SelaleHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
     RoundedImageView foto;
     TextView textView;
     CardView cardView;
 
-    public ViewHolder(final View itemView) {
+    public SelaleHolder(final View itemView) {
         super(itemView);
 
 
@@ -57,25 +59,25 @@ public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickL
 
         switch (position) {
             case 0:
-                Intent niyet0 = new Intent(view.getContext(), Anasayfa.class);
+                Intent niyet0 = new Intent(view.getContext(), Ulukaya.class);
                 view.getContext().startActivity(niyet0);
                 break;
             case 1:
-                Intent niyet1 = new Intent(view.getContext(), Merkez.class);
+                Intent niyet1 = new Intent(view.getContext(), Golderesi.class);
                 view.getContext().startActivity(niyet1);
                 break;
             case 2:
-                Intent niyet2 = new Intent(view.getContext(), Amasra.class);
+                Intent niyet2 = new Intent(view.getContext(), Aksu.class);
                 view.getContext().startActivity(niyet2);
                 break;
             case 3:
-                Intent niyet3 = new Intent(view.getContext(), Kurucasile.class);
-                view.getContext().startActivity(niyet3);
+               // Intent niyet3 = new Intent(view.getContext(), Kurucasile.class);
+                //view.getContext().startActivity(niyet3);
 
                 break;
             case 4:
-                Intent niyet4 = new Intent(view.getContext(), Ulus.class);
-                view.getContext().startActivity(niyet4);
+                //Intent niyet4 = new Intent(view.getContext(), Ulus.class);
+                //view.getContext().startActivity(niyet4);
                 break;
 
         }

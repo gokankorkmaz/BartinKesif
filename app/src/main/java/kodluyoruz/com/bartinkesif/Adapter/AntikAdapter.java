@@ -19,35 +19,33 @@ import kodluyoruz.com.bartinkesif.R;
  * Ayrıca bir önceki adımda oluşturduğumuz ItemViewHolder sınıfımızı <> işretleri arasında yazıyoruz.
  * Adapterimizde Item listesine ihtiyacımız var.Daha sonra Adapterimizin constructor’ını ekliyoruz
  * (Sağ tık/Genarate/Generate Constructor)
- * <p>
  * onCreateViewHolder metodu içine LayoutInflater kullanarak bir view objesi oluşturuyoruz.
  * Parametre olarak daha önce oluşturduğumuz layout xml ‘i veriyoruz.
- * <p>
  * ViewHolder sınıfımızdan bir obje oluşturuyoruz ve parametre olarak yukarda yaptığımız view’i veriyoruz.
  * Dikkat ettiyseniz bu metod geriye ItemViewHolder objesi döndüryor bizde türettiğimiz
  * ViewHolder’ı retur itemViewHolder; diyerek döndürüyoruz.
  */
-public class Adapter extends RecyclerView.Adapter<ViewHolder> {
+public class AntikAdapter extends RecyclerView.Adapter<AntikHolder> {
     ArrayList<Item> itemList;
 
     Context context;
     int itemLayout;
 
-    public Adapter(ArrayList<Item> itemList, Context context, int itemLayout) {
+    public AntikAdapter(ArrayList<Item> itemList, Context context, int itemLayout) {
         this.itemList = itemList;
         this.context = context;
         this.itemLayout = itemLayout;
     }
 
     @Override
-    public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public AntikHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(context).inflate(R.layout.item_card_replik, parent, false);
 
-        return new ViewHolder(v);
+        return new AntikHolder(v);
     }
 
     @Override
-    public void onBindViewHolder(ViewHolder holder, int position) {
+    public void onBindViewHolder(AntikHolder holder, int position) {
         Item item = itemList.get(position);
 
 

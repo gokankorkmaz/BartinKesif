@@ -30,10 +30,10 @@
 
 
             <ImageView
-                android:scaleType="center"
+                android:scaleType="centerCrop"
                 android:id="@+id/imageView"
-                android:layout_width="1070px"
-                android:layout_height="750px"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
                 android:src="@drawable/merkez" />
 
 
@@ -58,7 +58,7 @@ Ekonomisi tarım ve ormancılığa dayalıdır. Başlıca tarım ürünleri mıs
 
 
                 android:textColor="#000000"
-                android:textSize="14sp" />
+                android:textSize="16sp" />
 
         </RelativeLayout>
     </ScrollView>

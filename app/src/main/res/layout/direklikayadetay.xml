@@ -26,16 +26,15 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#FFFFFF"
-        tools:context="kodluyoruz.com.bartinkesif.Fragment.Ulus">
+        tools:context="kodluyoruz.com.bartinkesif.Fragment.Anasayfa">
 
 
         <ImageView
             android:scaleType="centerCrop"
-
             android:id="@+id/imageView"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:src="@drawable/ulus" />
+            android:src="@drawable/direklikaya" />
 
 
 
@@ -46,16 +45,11 @@
             android:layout_below="@+id/imageView"
             android:gravity="left"
             android:maxLines="500"
-                       android:scrollbars="vertical"
-            android:text=" Ulus, Bartın ilinin bir ilçesidir.Osmanlılar zamanında ilçe küçük bir yerleşim merkezi olarak kalmış, herhangi bir ticari, siyasi ve askeri olaya sahne olmamıştır.\n\n
+            android:scrollbars="vertical"
+            android:text="\n Amasra Direkli Kaya, Cenevizli’ler tarafından fener olarak kullanılmış, 7 metre yüksekliğinde kayaya sahiptir.Bu kayanın çevresinde denizle bağlantılı havuz bulunmaktadır.\n\n
+Amasra Küçük Liman’da bulunan Direkli Kaya eskiden fener olarak kullanılmış daha sonraları Kraliçe Amastrist’in özel havuzu olarak kullanılmıştır.
+Havuzun Direkli Kaya’yla bağlantısı “yontularak oluşturulmuş kaya merdivenler”le sağlanmaktadır.\n\nDirekli kaya Amasra’da denize girilebilecek en güzel yerlerden biridir.Ulaşımı kolaydır ve Küçük Limanı en güzel açıdan gören yerde bulunur…"
 
-Ulus, Safranbolu ilçesine bağlı nahiye durumunda iken 8 Ağustos 1944 yılında ilçe olması nedeni ile Zonguldak iline bağlanmıştır. 28 Ağustos 1991 gün ve 3760 sayılı kanunla Bartın ilçesinin il olması üzerine Ulus, Bartın iline bağlanmıştır.\n\n
-
-İlçe genelde engebeli araziye sahiptir. Bölgenin esas bitki örtüsü ormandır. Denizden ortalama yüksekliği 200 metre olup, yüzölçümü 713 km² dir.
-
-Turizm yönü henüz keşfedilmemiş 4000 kişinin yaşadığı doğa ile iç içe şirin bir ilçedir.
-
-"
 
             android:textColor="#000000"
             android:textSize="16sp" />

@@ -10,8 +10,10 @@ import com.makeramen.roundedimageview.RoundedImageView;
 
 import kodluyoruz.com.bartinkesif.Fragment.Amasra;
 import kodluyoruz.com.bartinkesif.Fragment.Anasayfa;
-import kodluyoruz.com.bartinkesif.Fragment.FragmentGoller;
+import kodluyoruz.com.bartinkesif.Fragment.Antik;
+import kodluyoruz.com.bartinkesif.Fragment.DirekliKaya;
 import kodluyoruz.com.bartinkesif.Fragment.Kurucasile;
+import kodluyoruz.com.bartinkesif.Fragment.Kuskayasi;
 import kodluyoruz.com.bartinkesif.Fragment.Merkez;
 import kodluyoruz.com.bartinkesif.Fragment.Ulus;
 import kodluyoruz.com.bartinkesif.R;
@@ -27,13 +29,13 @@ import kodluyoruz.com.bartinkesif.R;
  * Sonraki Adım:Adaptor olusturma
  */
 
-public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+public class AntikHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
     RoundedImageView foto;
     TextView textView;
     CardView cardView;
 
-    public ViewHolder(final View itemView) {
+    public AntikHolder(final View itemView) {
         super(itemView);
 
 
@@ -57,15 +59,15 @@ public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickL
 
         switch (position) {
             case 0:
-                Intent niyet0 = new Intent(view.getContext(), Anasayfa.class);
+                Intent niyet0 = new Intent(view.getContext(), Antik.class);
                 view.getContext().startActivity(niyet0);
                 break;
             case 1:
-                Intent niyet1 = new Intent(view.getContext(), Merkez.class);
+                Intent niyet1 = new Intent(view.getContext(), Kuskayasi.class);
                 view.getContext().startActivity(niyet1);
                 break;
             case 2:
-                Intent niyet2 = new Intent(view.getContext(), Amasra.class);
+                Intent niyet2 = new Intent(view.getContext(), DirekliKaya.class);
                 view.getContext().startActivity(niyet2);
                 break;
             case 3:

@@ -26,16 +26,15 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#FFFFFF"
-        tools:context="kodluyoruz.com.bartinkesif.Fragment.Ulus">
+        tools:context="kodluyoruz.com.bartinkesif.Fragment.Anasayfa">
 
 
         <ImageView
             android:scaleType="centerCrop"
-
             android:id="@+id/imageView"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:src="@drawable/ulus" />
+            android:src="@drawable/kuskayasi" />
 
 
 
@@ -46,16 +45,9 @@
             android:layout_below="@+id/imageView"
             android:gravity="left"
             android:maxLines="500"
-                       android:scrollbars="vertical"
-            android:text=" Ulus, Bartın ilinin bir ilçesidir.Osmanlılar zamanında ilçe küçük bir yerleşim merkezi olarak kalmış, herhangi bir ticari, siyasi ve askeri olaya sahne olmamıştır.\n\n
+            android:scrollbars="vertical"
+            android:text="\n Amasra - Bartın karayolu üzerinde, Amasra’ya 4 km uzaklıktaki Kuşkayası mevkisindedir.Roma İmparatoru T. Germanious Claudius zamanında Doğu Eyaletleri İnşa Ordusu Komutanlığı yaptıktan sonra yaşam boyu Bitinya -Pontus Valiliğine atanan Gaius Julius Aguilla tarafından M.S. 41-54 yıllarında yaptırılmıştır. \n\n Roma yol ağının bir parçası olan ve İmpa­ratorun anısına yaptırılan bu anıt; yufka kabartma tekniğiyle kayalara oyulmuş Kral heykeli ve Roma Hakimiyet Kartalı ile birbirini tamamlayan  iki  kitabe,  oturma  sedirleri ve kaya nişlerini kapsamaktadır. \n\n Anıta ait , Kral Heykeli ve Hakimiyet Kartalı’nın başları tahrip olmuştur. Birisi kral figürünü çevreleyen Niş’in üstünde, diğeri kabartmalardan uzakta ve batıda bulunan birbirini tamamlayan kitabelerde; “Devletlerarası barışın ve dostluğun anısına, İmparator Germanious’un yüceliği için G.J.Aguilla yaptırdı” ifadeleri bulunmaktadır."
 
-Ulus, Safranbolu ilçesine bağlı nahiye durumunda iken 8 Ağustos 1944 yılında ilçe olması nedeni ile Zonguldak iline bağlanmıştır. 28 Ağustos 1991 gün ve 3760 sayılı kanunla Bartın ilçesinin il olması üzerine Ulus, Bartın iline bağlanmıştır.\n\n
-
-İlçe genelde engebeli araziye sahiptir. Bölgenin esas bitki örtüsü ormandır. Denizden ortalama yüksekliği 200 metre olup, yüzölçümü 713 km² dir.
-
-Turizm yönü henüz keşfedilmemiş 4000 kişinin yaşadığı doğa ile iç içe şirin bir ilçedir.
-
-"
 
             android:textColor="#000000"
             android:textSize="16sp" />

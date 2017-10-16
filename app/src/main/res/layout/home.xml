@@ -30,15 +30,13 @@
 
 
         <ImageView
-            android:scaleType="center"
-
+            android:scaleType="centerCrop"
             android:id="@+id/imageView"
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:src="@drawable/bartin" />
 
 
-        <!--android:layout_below="@+id/imageView"-->
 
         <TextView
             android:id="@+id/textView"
@@ -75,7 +73,7 @@ Bartın’ın halen Merkez, Amasra, Ulus ve Kurucaşile olmak üzere 4 ilçesi v
 
 
             android:textColor="#000000"
-            android:textSize="14sp" />
+            android:textSize="16sp" />
     </RelativeLayout>
     </ScrollView>
 </LinearLayout>

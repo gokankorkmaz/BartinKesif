@@ -1,6 +1,7 @@
 package kodluyoruz.com.bartinkesif.Fragment;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -20,6 +21,10 @@ public class Merkez extends AppCompatActivity {
 
 
         TextView textView = (TextView)findViewById(R.id.textView);
+        Typeface font = Typeface.createFromAsset(getAssets(),
+                "raleway_medium.ttf");
+        textView.setTypeface(font);
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
 
         setSupportActionBar(toolbar);

@@ -21,20 +21,11 @@
             </intent-filter>
         </activity>
 
-        <activity
-            android:name=".detayActivity"
-            android:label="Bartın ve Tarihi"
-            android:parentActivityName=".MainActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
-        </activity>
+
 
 
         <activity
             android:name=".Fragment.Anasayfa">
-            <!--android:label="Bar Var Gelsene"-->
-            <!--android:theme="@style/AppTheme">-->
 
         <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -53,7 +44,21 @@
             android:name=".Fragment.Kurucasile"/>
         <activity
             android:name=".Fragment.Ulus"/>
+        <activity
+            android:name=".Fragment.Antik"/>
 
+        <activity
+            android:name=".Fragment.Kuskayasi"/>
+        <activity
+            android:name=".Fragment.DirekliKaya"/>
+
+        <activity
+            android:name=".Fragment.Ulukaya"/>
+
+        <activity
+            android:name=".Fragment.Golderesi"/>
+        <activity
+            android:name=".Fragment.Aksu"/>
      </application>
 
 </manifest>
