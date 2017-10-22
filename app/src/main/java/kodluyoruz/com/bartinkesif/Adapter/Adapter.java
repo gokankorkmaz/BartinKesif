@@ -44,6 +44,7 @@ public class Adapter extends RecyclerView.Adapter<ViewHolder> {
         View v = LayoutInflater.from(context).inflate(R.layout.item_card_replik, parent, false);
 
         return new ViewHolder(v);
+
     }
 
     @Override
